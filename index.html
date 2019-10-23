@@ -188,11 +188,12 @@
   };
   var wizardSpeed=3;
   var wizardWidth=70;
-  var wizardHeight = wizardWidth*1.337;
+  // var wizardHeight = wizardWidth*1.337;
   var getWizardHeight = function(wizardWidth) {
     var wizardHeight = wizardWidth*1.337;
     return wizardHeight;
   }
+  var wizardHeight = getWizardHeight(wizardWidth)
   var getWizardX = function(width) {
     var wizardX = width/2-wizardWidth/2;
     return wizardX;
@@ -202,6 +203,7 @@
     return wizardY;
   }
 </script>
+<script src="js/stat.js"></script>
 <script src="js/game.js"></script>
 
 </body>
